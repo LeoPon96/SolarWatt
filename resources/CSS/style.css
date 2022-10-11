@@ -1,10 +1,10 @@
 /* Colors 
 
-color: hsl (214 53% 75%), #SA86BF, beton-blue
-color: hsl (208 56% 26%), #1C2F40, dark-grey-blue
-color: hsl (208 50% 75%), #6093BF, light-beton-blue
-color: hsl (50 48% 95%), #F2DF7E, ocker-gelb
-color: hsl (28 45% 75%), #BF9169, dark-beige
+color: hsl(214 53% 75%), #SA86BF, beton-blue
+color: hsl(208 56% 26%), #1C2F40, dark-grey-blue
+color: hsl(208 50% 75%), #6093BF, light-beton-blue
+color: hsl(50 60% 70%), #F2DF7E, ocker-gelb
+color: hsl(28 45% 75%), #BF9169, dark-beige
 
 Font Families
 
@@ -18,28 +18,75 @@ html {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: hsl(50 60% 70%);
+}
+
 /* Header */
+
 header {
     position: fixed;
-    display: flex;
+    z-index: 100;
     height: 80px;
     width: 100%;
-    background-color: hsl (208 56% 26%);
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    background-color: hsl(208 56% 26%);
+}
+
+header h3 {
+    font-size: 50px;
+    color: hsl(208 50% 75%);
+    margin-left: 24px;
+    letter-spacing: 1px;
+}
+
+header h3 span {
+    color: hsl(50 60% 70%);
+}
+
+header nav {
+    margin-right: 34px;
 }
 
 .head-ul {
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
-    align-content: center;
+    align-items: center;
+}
+
+.head-ul li {
+    padding: 0 6px;
 }
 
 /* Main */
 
 main {
     margin-top: 80px;
+}
+
+.landing {
+    background-color: hsl(214 53% 75%);
+    height: 500px;
+    width: 100%;
     display: flex;
-    background-image: url("https://imageio.forbes.com/specials-images/imageserve/607f5cfc70243883489231b4/solar-city/960x0.jpg?format=jpg&width=960");
-    background-position: left;
-    background-repeat: no-repeat;
+}
+
+.landing-image {
+    display: flex;
+    width: 60%;
+}
+
+.landing-text {
+    width: 100%;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    align-self: center;
+    z-index: 50;
+    overflow: visible;
 }

@@ -8,14 +8,18 @@ color: hsl(28 45% 75%), #BF9169, dark-beige
 
 Font Families
 
-Font-Family: 'Roboto Condensed', Sans-Serif;
-Font-Size: 35px;
-Font-Family: 'Cabin', Sans-Serif;
-Font-Size: 16px; */
+Font-Family: 'Roboto', Sans-Serif;
+Font-Size: 48px;
+Font-Family: 'Lora', Serif;
+Font-Size: 14px; */
 
 html {
     font-size: 22px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    color: hsl(208 50% 75%);
 }
 
 a {
@@ -39,13 +43,9 @@ header {
 
 header h3 {
     font-size: 50px;
-    color: hsl(208 50% 75%);
+    color: hsl(50 60% 70%);
     margin-left: 24px;
     letter-spacing: 1px;
-}
-
-header h3 span {
-    color: hsl(50 60% 70%);
 }
 
 header nav {
@@ -69,7 +69,7 @@ main {
 }
 
 .landing {
-    background-color: hsl(214 53% 75%);
+    background-color: hsl(208 50% 75%); 
     height: 500px;
     width: 100%;
     display: flex;
@@ -81,12 +81,16 @@ main {
 }
 
 .landing-text {
-    width: 100%;
-    padding-top: 200px;
+    
+    color: hsl(50 60% 65%);
     display: flex;
     flex-direction: column;
     justify-items: flex-end;
     align-self: center;
     z-index: 50;
     overflow: visible;
+}
+
+.landing-text span {
+    color:  hsl(208 56% 26%);
 }

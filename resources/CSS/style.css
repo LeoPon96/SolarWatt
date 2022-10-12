@@ -22,9 +22,21 @@ span {
     color: hsl(208 50% 75%);
 }
 
+h3 {
+    color: hsl(208 56% 26%);
+}
+
 a {
     text-decoration: none;
-    color: hsl(50 60% 70%);
+    color: hsl(50 60% 40%);
+}
+
+p {
+    width: 55%;
+}
+
+li {
+    padding: 0 6px;
 }
 
 /* Header */
@@ -43,7 +55,7 @@ header {
 
 header h3 {
     font-size: 50px;
-    color: hsl(50 60% 70%);
+    color: hsl(50 60% 50%);
     margin-left: 24px;
     letter-spacing: 1px;
 }
@@ -58,18 +70,16 @@ header nav {
     align-items: center;
 }
 
-.head-ul li {
-    padding: 0 6px;
-}
-
 /* Main */
+
+/* Landing Page */
 
 main {
     margin-top: 80px;
 }
 
 .landing {
-    background-color: hsl(208 50% 75%); 
+    background-color: hsl(208 50% 85%); 
     height: 500px;
     width: 100%;
     display: flex;
@@ -78,19 +88,75 @@ main {
 .landing-image {
     display: flex;
     width: 60%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .landing-text {
-    
-    color: hsl(50 60% 65%);
+    color: hsl(50 60% 45%);
     display: flex;
-    flex-direction: column;
-    justify-items: flex-end;
     align-self: center;
     z-index: 50;
-    overflow: visible;
+    padding-left: 16px;
 }
 
 .landing-text span {
     color:  hsl(208 56% 26%);
 }
+
+/* Sections */
+
+
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    background-color: hsl(208 50% 80%);
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: hsl(208 56% 26%);
+}
+
+footer p {
+    color: hsl(50 60% 50%);
+    padding-left: 24px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    padding-right: 24px;
+    font-size: 18px;
+}
+

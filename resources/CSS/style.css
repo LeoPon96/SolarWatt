@@ -44,7 +44,7 @@ li {
 header {
     position: fixed;
     z-index: 100;
-    height: 80px;
+    height: 3.36rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -54,14 +54,14 @@ header {
 }
 
 header h3 {
-    font-size: 50px;
+    font-size: 2.27rem;
     color: hsl(50 60% 50%);
-    margin-left: 24px;
+    margin-left: 1.09rem;
     letter-spacing: 1px;
 }
 
 header nav {
-    margin-right: 34px;
+    margin-right: 1.54rem;
 }
 
 .head-ul {
@@ -70,17 +70,21 @@ header nav {
     align-items: center;
 }
 
+header .mobile {
+    display: none;
+}
+
 /* Main */
 
 /* Landing Page */
 
 main {
-    margin-top: 80px;
+    margin-top: 3.36rem;
 }
 
 .landing {
     background-color: hsl(208 50% 85%); 
-    height: 500px;
+    height: 22.72rem;
     width: 100%;
     display: flex;
 }
@@ -101,7 +105,7 @@ img {
     display: flex;
     align-self: center;
     z-index: 50;
-    padding-left: 16px;
+    padding-left: 0.72rem;
 }
 
 .landing-text span {
@@ -110,31 +114,16 @@ img {
 
 /* Sections */
 
-
-
-.message {
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 250px;
+    height: 11.36rem;
 }
 
 .products {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
     background-color: hsl(208 50% 80%);
-}
-
-.about-us {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
 }
 
 /* Footer */
@@ -148,7 +137,7 @@ footer {
 
 footer p {
     color: hsl(50 60% 50%);
-    padding-left: 24px;
+    padding-left: 1.09rem;
 }
 
 footer ul {
@@ -156,7 +145,19 @@ footer ul {
     display: flex;
     justify-items: flex-start;
     align-items: center;
-    padding-right: 24px;
-    font-size: 18px;
+    padding-right: 1.09rem;
+    font-size: 0.81rem;
 }
 
+@media only screen and (max-width: 750px){
+    
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        align-items: center;
+        color: hsl(50 60% 40%);
+    }
+}
